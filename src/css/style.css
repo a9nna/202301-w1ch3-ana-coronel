@@ -7,7 +7,8 @@ html {
 
 h1 {
   color: white;
-  font-size: 5rem;
+  font-size: 1.5rem;
+  flex: 1;
 }
 
 header {
@@ -16,20 +17,35 @@ header {
   justify-content: space-between;
   background-color: #279989;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 nav > ul li {
   list-style-type: none;
   color: white;
+  font-size: small;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
   flex: 1;
+}
+
+.total-purchases {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: #44a080;
+  padding: 2rem;
+  color: white;
 }
