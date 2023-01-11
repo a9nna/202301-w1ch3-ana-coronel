@@ -1,4 +1,35 @@
+@import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
+}
+
 header {
   display: flex;
-  background-color: rgb(0, 128, 107);
+  align-items: center;
+  justify-content: space-between;
+  background-color: #279989;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+nav > ul li {
+  list-style-type: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+main {
+  flex: 1;
 }
