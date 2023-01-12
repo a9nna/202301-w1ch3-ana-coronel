@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="Author: Ana Coronel, Category: Proyect,
+      Length: 2 pages">
+  <link rel="stylesheet" href="../src/css/style.css">
   <link rel="shortcut icon" href="./images/icons8-hamper-48.png" type="image/x-icon">
   <title>Shopping List</title>
 </head>
@@ -15,8 +17,8 @@
     <h1>Shopping list</h1>
     <nav>
       <ul>
-        <li> <a href="./index.html">Shopping list</a></li>
-        <li> <a href="./purchase-form.html">Purchase form</a></li>
+        <li> <a href="/src">Shopping list</a></li>
+        <li> <a href="../src/purchase-form.html">Purchase form</a></li>
       </ul>
     </nav>
   </header>
@@ -26,19 +28,34 @@
       <span>2/3 bought</span>
     </div>
     <div class="list-of-ingredients">
-      <ul>
-        <li>Bread</li>
-        <li>Sugar</li>
-        <li>Milk</li>
-        <li>Tofu</li>
-      </ul>
-      <ul>
-        <li>0.75 X</li>
-        <li>0.00 X</li>
-        <li>1.20 X</li>
-        <li>4.35 X</li>
-      </ul>
-      <span>6.3 €</span>
+      <section class="shopping-list-details">
+        <ul class="ingredients">
+          <li>
+            <label class="crossed-out"><input type="checkbox">Bread</label>
+          </li>
+          <li>
+            <label><input type="checkbox">Sugar</label>
+          </li>
+          <li>
+            <label class="crossed-out"><input type="checkbox">Milk</label>
+          </li>
+          <li>
+            <label><input type="checkbox">Tofu</label>
+          </li>
+        </ul>
+        <ul class="prices">
+          <li class="crossed-out">0.75 € <i class="fa-solid fa-xmark"></i></li>
+          <li><span class="no-price">0.00 € </span> <i class="fa-solid fa-xmark"></i></li>
+          <li class="crossed-out">1.20 € <i class="fa-solid fa-xmark"></i></li>
+          <li>4.35 € <i class="fa-solid fa-xmark"></i></li>
+        </ul>
+      </section>
+      <section>
+        <div class="separation-line"></div>
+      </section>
+      <section class="total-price">
+        <span>6.3 €</span>
+      </section>
     </div>
   </main>
 

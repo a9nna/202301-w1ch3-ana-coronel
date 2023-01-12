@@ -3,6 +3,13 @@
 html {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 h1 {
@@ -15,7 +22,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #279989;
+  background-color: #077465;
   flex-wrap: wrap;
   padding: 1rem;
 }
@@ -38,6 +45,7 @@ a {
 }
 
 main {
+  background-color: #ffc845;
   flex: 1;
 }
 
@@ -48,4 +56,52 @@ main {
   background-color: #44a080;
   padding: 2rem;
   color: white;
+}
+
+.shopping-list-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.shopping-list-details > ul {
+  margin: 0;
+  padding: 1rem;
+}
+
+.shopping-list-details li {
+  list-style-type: none;
+}
+
+.no-price {
+  color: #ffc845;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem 0 0;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin: 0.5rem;
+}
+
+.prices li {
+  margin: 0.5rem;
+}
+
+.separation-line {
+  position: relative;
+  border: 1px gray solid;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+}
+
+.crossed-out {
+  text-decoration: line-through;
 }
