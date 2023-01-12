@@ -1,0 +1,107 @@
+@import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #077465;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+nav > ul li {
+  list-style-type: none;
+  color: white;
+  font-size: small;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  background-color: #ffc845;
+  flex: 1;
+}
+
+.total-purchases {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: #44a080;
+  padding: 2rem;
+  color: white;
+}
+
+.shopping-list-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.shopping-list-details > ul {
+  margin: 0;
+  padding: 1rem;
+}
+
+.shopping-list-details li {
+  list-style-type: none;
+}
+
+.no-price {
+  color: #ffc845;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem 0 0;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin: 0.5rem;
+}
+
+.prices li {
+  margin: 0.5rem;
+}
+
+.separation-line {
+  position: relative;
+  border: 1px gray solid;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+}
+
+.crossed-out {
+  text-decoration: line-through;
+}
