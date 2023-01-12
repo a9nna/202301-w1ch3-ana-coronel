@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Author: Ana Coronel, Category: Proyect,
+          Length: 2 pages">
   <link rel="stylesheet" href="../src/css/style.css">
   <link rel="shortcut icon" href="./images/icons8-hamper-48.png" type="image/x-icon">
   <title>Purchase form</title>
@@ -12,50 +14,35 @@
 
 <body>
   <header>
-    <h1>
-      <h1>Purchase form</h1>
-    </h1>
+    <h1>Purchase form</h1>
     <nav>
       <ul>
         <li> <a href="/src">Shopping list</a></li>
-        <li> <a href="/src">Purchase form</a></li>
+        <li> <a href="../src/purchase-form.html">Purchase form</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <div class="total-purchases">
-      <i class="fa-solid fa-circle-plus"></i>
+      <i class="fa-solid fa-circle-minus"></i>
       <span>2/3 bought</span>
     </div>
-    <div class="list-of-ingredients">
-      <section class="shopping-list-details">
-        <ul class="ingredients">
-          <li>
-            <label class="crossed-out"><input type="checkbox">Bread</label>
-          </li>
-          <li>
-            <label><input type="checkbox">Sugar</label>
-          </li>
-          <li>
-            <label class="crossed-out"><input type="checkbox">Milk</label>
-          </li>
-          <li>
-            <label><input type="checkbox">Tofu</label>
-          </li>
-        </ul>
-        <ul class="prices">
-          <li class="crossed-out">0.75 € <i class="fa-solid fa-xmark"></i></li>
-          <li><span class="no-price">0.00 € </span> <i class="fa-solid fa-xmark"></i></li>
-          <li class="crossed-out">1.20 € <i class="fa-solid fa-xmark"></i></li>
-          <li>4.35 € <i class="fa-solid fa-xmark"></i></li>
-        </ul>
-      </section>
-      <section>
-        <div class="separation-line"></div>
-      </section>
-      <section class="total-price">
-        <span>6.3 €</span>
-      </section>
+    <div class="article-div">
+      <span>Add article</span>
+      <form>
+        <div class="article-form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="article-form">
+          <label for="price">Price:</label>
+          <input type="number" name="price" id="price" required>
+        </div>
+        <div class="article-form">
+          <button type="submit" value="Add">Add</button>
+        </div>
+      </form>
     </div>
   </main>
 </body>
